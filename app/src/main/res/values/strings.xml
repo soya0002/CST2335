@@ -5,4 +5,9 @@
     <string name="loginText">login</string>
     <string name="passwordText">password</string>
     <string name="loginHint">login name</string>
+    <string name="dialog_message">Finish Activity</string>
+    <string name="dialog_title">Finish ListItemActivity</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+
 </resources>

@@ -1,6 +1,7 @@
 package androidlabs.com.androidlabs;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
@@ -17,6 +18,8 @@ public class LoginActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.i(ACTIVITY_NAME, "In onCreate()");
+
         setContentView(R.layout.activity_login);
         btnLogin = (Button) findViewById(R.id.btnLogin);
         edtEmail = (EditText) findViewById(R.id.edtEmail);
@@ -32,6 +35,9 @@ public class LoginActivity extends Activity {
                 editor = sharedPreferences.edit();
                 editor.putString("DefaultEmail",edtEmail.getText().toString());
                 editor.commit();
+                Intent intent = new Intent(LoginActivity.this, StartActivity.class);
+                startActivity(intent);
+
             }
         });
 
