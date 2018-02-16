@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 public class StartActivity extends Activity {
     protected static final String ACTIVITY_NAME = "StartActivity";
-    private Button button;
+    private Button button,btnStartChat;
     private int REQUEST_CODE = 50;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,11 +19,19 @@ public class StartActivity extends Activity {
 
         setContentView(R.layout.activity_start);
         button = (Button) findViewById(R.id.button);
+        btnStartChat = (Button) findViewById(R.id.btnStartChat);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(StartActivity.this,ListItemsActivity.class);
                 startActivityForResult(intent,REQUEST_CODE);
+            }
+        });
+        btnStartChat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.i(ACTIVITY_NAME, "User clicked Start Chat");
+                startActivity(new Intent(StartActivity.this,ChatWindow.class));
             }
         });
     }

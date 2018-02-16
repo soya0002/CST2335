@@ -6,4 +6,10 @@
     <string name="loginText">iniciar sesión</string>
     <string name="passwordText">contraseña</string>
     <string name="loginHint">nombre de inicio de sesión</string>
+    <string name="dialog_message">Actividad final</string>
+    <string name="dialog_title">Finalizar ListItemActivity</string>
+    <string name="yes">Sí</string>
+    <string name="no">Cancelar</string>
+    <string name="send">Senviar</string>
+    <string name="start_chat">Comenzar chat</string>
 </resources>

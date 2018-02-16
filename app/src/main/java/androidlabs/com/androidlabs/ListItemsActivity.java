@@ -33,11 +33,11 @@ public class ListItemsActivity extends Activity {
         imgBtnCamera = (ImageButton) findViewById(R.id.imgBtnCamera);
         checkBox = (CheckBox) findViewById(R.id.checkBox);
         switch1 = (Switch) findViewById(R.id.switch1);
-        if (checkSelfPermission(Manifest.permission.CAMERA)
-                != PackageManager.PERMISSION_GRANTED) {
-            requestPermissions(new String[]{Manifest.permission.CAMERA},
-                    CAMERA_REQUEST_CODE);
-        }
+//        if (checkSelfPermission(Manifest.permission.CAMERA)
+//                != PackageManager.PERMISSION_GRANTED) {
+//            requestPermissions(new String[]{Manifest.permission.CAMERA},
+//                    CAMERA_REQUEST_CODE);
+//        }
         imgBtnCamera.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
