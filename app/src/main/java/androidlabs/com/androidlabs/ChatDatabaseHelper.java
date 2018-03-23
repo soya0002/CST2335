@@ -12,7 +12,7 @@ import android.util.Log;
 public class ChatDatabaseHelper extends SQLiteOpenHelper{
 
     static String DATABASE_NAME = "Messages.db";
-    static int VERSION_NUM = 3;
+    static int VERSION_NUM = 4;
     static final String KEY_ID = "_id", KEY_MESSAGE = "message";
     public static final String TABLE_NAME = "tbl_message";
 
