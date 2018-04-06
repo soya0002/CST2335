@@ -7,14 +7,11 @@
     tools:context="androidlabs.com.androidlabs.ChatWindow">
 
     <ListView
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
         android:id="@+id/listView"
-        android:layout_above="@id/btnSend"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="match_parent"
-        />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
 
     <EditText
         android:id="@+id/edtMessage"
@@ -25,13 +22,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <Button
-        android:layout_alignParentRight="true"
+        android:layout_alignEnd="@id/listView"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-
         android:id="@+id/btnSend"
         android:text="@string/send"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
+
+    <FrameLayout
+        android:id="@+id/fm"
+        android:layout_toRightOf="@id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
 </RelativeLayout>

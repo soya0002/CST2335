@@ -12,4 +12,5 @@
     <string name="send">Send</string>
     <string name="start_chat">Start Chat</string>
     <string name="btn_start_activity">StartActivity</string>
+    <string name="btn_delete_message">Delete this Message</string>
 </resources>
