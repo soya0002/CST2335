@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 public class StartActivity extends Activity {
     protected static final String ACTIVITY_NAME = "StartActivity";
-    private Button button,btnStartChat,btnStartActivity;
+    private Button button,btnStartChat,btnStartActivity,btnTestToolbar;
     private int REQUEST_CODE = 50;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +21,7 @@ public class StartActivity extends Activity {
         button = (Button) findViewById(R.id.button);
         btnStartChat = (Button) findViewById(R.id.btnStartChat);
         btnStartActivity = (Button) findViewById(R.id.btnStartActivity);
+        btnTestToolbar = (Button) findViewById(R.id.btnTestToolbar);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,6 +41,13 @@ public class StartActivity extends Activity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(StartActivity.this,WeatherForecast.class));
+            }
+        });
+
+        btnTestToolbar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(StartActivity.this,TestToolbar.class));
             }
         });
     }

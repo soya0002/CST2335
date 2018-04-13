@@ -13,4 +13,7 @@
     <string name="start_chat">Start Chat</string>
     <string name="btn_start_activity">StartActivity</string>
     <string name="btn_delete_message">Delete this Message</string>
+    <string name="title_activity_test_toolbar">TestToolbar</string>
+    <string name="btn_start_toolbar">Test Toolbar</string>
+    <string name="snack_msg">This is snackbar message</string>
 </resources>
