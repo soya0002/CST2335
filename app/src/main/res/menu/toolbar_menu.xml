@@ -7,13 +7,17 @@
         android:orderInCategory="101"
         app:showAsAction="always" />
     <item android:id="@+id/choice_2"
-        android:title="One"
+        android:title="Two"
         android:icon="@drawable/icon_2"
         android:orderInCategory="102"
         app:showAsAction="always" />
     <item android:id="@+id/choice_3"
-        android:title="One"
+        android:title="Three"
         android:icon="@drawable/icon_3"
         android:orderInCategory="103"
         app:showAsAction="always" />
-</menu>
+    <item android:id="@+id/choice_4"
+        android:title="About"
+        android:icon="@drawable/icon_3"
+        android:orderInCategory="104"
+        app:showAsAction="never" /></menu>
